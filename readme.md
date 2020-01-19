@@ -20,8 +20,23 @@ In PowerShell, you can do:
 $winIsoUrl = $(npx https://github.com/TomasHubelbauer/win-iso-url)
 ```
 
+## Rate Limit
+
+Microsoft rate-limits this endpoint pretty heavily, you won't be able to run
+this script more than three times in a row.
+
+It's not clear how long the GUID in the URL takes to expire.
+
 ## Running
 
 When running from the source:
 
 `node .`
+
+## To-Do
+
+### Make sure this still works
+
+I did some refactoring and now I'm being rate limited.
+
+### Find out the approximate expiration of the GUID in the ISO URL
